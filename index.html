@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paparan Baharu - Sharp HD</title>
+    <title>Paparan Baharu - Kualiti Jelas</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Teknik untuk mengurangkan kekaburan semasa gambar ditarik */
+        /* Teknik untuk menajamkan tepi piksel imej */
         img {
-            image-rendering: -webkit-optimize-contrast; /* Untuk Chrome/Safari */
-            image-rendering: crisp-edges;               /* Untuk Firefox */
-            image-rendering: pixelated;                 /* Alternatif untuk ketajaman */
-            -ms-interpolation-mode: nearest-neighbor;   /* Untuk IE lama */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
         }
         /* Menghilangkan highlight biru semasa klik di mobile */
         a, img {
@@ -20,35 +19,23 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 min-h-screen flex flex-col items-center justify-center p-2 sm:p-8 antialiased">
+<body class="bg-gray-900 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 antialiased">
 
     <!-- 
-      Bekas utama dikecilkan sedikit ke max-w-md (448px). 
-      Ini mengelakkan gambar ditarik terlalu lebar yang menyebabkan kabur.
+      Bekas utama menggunakan max-w-sm (384px) supaya imej tidak pecah 
+      akibat ditarik terlalu lebar di skrin besar.
     -->
-    <div class="w-full max-w-md text-center flex flex-col items-center" id="ruang-gambar">
+    <div class="w-full max-w-sm text-center flex flex-col items-center" id="ruang-gambar">
         
-        <!-- Gambar pertama -->
-        <div class="w-full relative z-10">
-            <img 
-                src="https://i.postimg.cc/PJzDp4dQ/1-Klik-Join-Copytrade-VRS-EA-2-Klik-3-Dot-3-Klik-Open-in-browser-(3).png" 
-                alt="Langkah-langkah tetapan" 
-                class="w-full h-auto object-contain"
-            />
-        </div>
-        
-        <!-- 
-          Gambar kedua dengan pautan Telegram:
-          Dinaikkan sedikit menggunakan -mt-[calc(51%-95px)].
-        -->
+        <!-- Gambar dengan pautan Telegram dan filter pencerah -->
         <a href="https://t.me/+qCu5B_jduchhODI1" 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="relative z-20 -mt-[calc(51%-95px)] w-full block cursor-pointer transition-all duration-300 active:scale-95 md:hover:scale-[1.02] md:hover:brightness-110">
+           class="w-full block cursor-pointer transition-all duration-300 active:scale-95 md:hover:scale-[1.02]">
             <img 
-                src="https://i.postimg.cc/VN1FKdVM/1-Klik-Join-Copytrade-VRS-EA-2-Klik-3-Dot-3-Klik-Open-in-browser-(2).png" 
-                alt="Sertai Copytrade VRS EA" 
-                class="w-full h-auto object-contain"
+                src="https://i.postimg.cc/nL0w74c5/1-Klik-Join-Copytrade-VRS-EA-2-Klik-3-Dot-3-Klik-Open-in-browser-(4).png" 
+                alt="Klik untuk Join Copytrade VRS EA" 
+                class="w-full h-auto object-contain rounded-lg shadow-xl contrast-[1.1] brightness-[1.05]"
             />
         </a>
 
